@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fire and Smoke Detection Results</title>
+</head>
+<body>
+    <h1>Fire and Smoke Detection Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Class</th>
+                <th>Confidence</th>
+            </tr>
+        </thead>
+        <tbody>
+            {# for each result #}
+            <tr>
+                <td>{{ result.classes[0] }}</td>
+                <td>{{ result.confidence[0] }}</td>
+            </tr>
+            {# endfor #}
+        </tbody>
+    </table>
+</body>
+</html>
